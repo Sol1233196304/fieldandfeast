@@ -132,15 +132,110 @@ h3 {
     font-weight: bold;
 }
 
-#offer section p{
+p{
     line-height: 150%;
 }
 
 #offer ul{
     padding: 15px ;
     line-height: 150%;
-    list-style-type: circle;
+    list-style-type: disc;
+}
+figure {
+    background-color: var(--soft-white);
+    text-align: center;
+    font-style: italic;
+    box-shadow: var(--box-shadow);
+    border-radius: 1em;
+    margin: 1em 0;
+    overflow: hidden;
+    display: inline-block;
+}
+figcaption {
+    padding : 1em;
+}
+span { 
+    color: var(--Linen);
+    font-size: bold;
+    background-color: var(--Green);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+footer {
+    padding: 1em;
+    margin: 0 auto;
+    color: var(--soft-white);
+    font-family: "Playfair Display";
+    font-size: 1em;
+    line-height: 150%;
+}
+footer section { 
+    padding: 1em;
+}
+footer address {
+    padding: 1.5em;
+}
+footer a {
+    text-decoration: none;
+    color: var(--Gold);
 }
 /* MEDIA QUERY MEDIUM */
+@media screen and (min-width:600px) {
+    main{
+        max-width: 900px;
+    }
+    #offer section{
+        margin: 0;
+        line-height: 150%;
+    }
+    #offer{
+        padding: 0;
+        display: grid; 
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        gap: 1em;
+    }
+    #offer h2 {
+        grid-column: 1/-1;
+    }
+    #Provisions {
+        grid-column: 1/3;
+    }
+    #Dining {
+        grid-column: 3/5;
+    }
+    #Basket {
+        grid-column: 1/-1;
+    }
+    #gallery{
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    #gallery h2, p, span {
+        grid-column: 1/-1;
+    }
+    picture {
+        width:100%;
+        margin: 0;
+        padding: 0; 
+    }
+    #tomatoes, #table, #monthly_basket {
+        grid-column: 1/3;
+    }
+    #olive, #chef{
+        grid-column: 3/-1;
+    }
+
+
+}
+
+
+
 /* MEDIA QUERY LARGE */
 /* MEDIA QUERY X-LARGE */
